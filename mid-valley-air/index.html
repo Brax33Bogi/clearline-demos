@@ -1,37 +1,298 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light">
+<head><meta name="robots" content="noindex,nofollow">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
-<title>Loading</title>
-<style>html,body{margin:0;height:100%}
-#cl-boot{font:400 15px/1.6 system-ui,-apple-system,sans-serif;color:#5a6472;
-display:flex;align-items:center;justify-content:center;height:100%;padding:24px;text-align:center}</style>
-</head>
-<body>
-<div id="cl-boot">Loading&hellip;</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mid Valley Air | Heating &amp; Air in Tulare, CA</title>
+<meta name="description" content="Mid Valley Air is a heating &amp; air serving Tulare and the surrounding Central Valley. Call (559) 308-9567.">
+<meta name="theme-color" content="#12151a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
+<style>
+  :root{
+    --ink:#12151a; --ink-2:#2b313b; --paper:#ffffff; --wash:#f4f5f7;
+    --accent:#2f7fd1; --accent-ink:#ffffff;
+  }
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+  .display{font-family:'Barlow Condensed',Impact,sans-serif;letter-spacing:-.01em;line-height:.95}
+  .num{font-variant-numeric:tabular-nums}
+  .balance{text-wrap:balance}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+  .rule{height:3px;background:var(--accent)}
+  @media (prefers-reduced-motion: no-preference){
+    .rise{animation:rise .6s cubic-bezier(.2,.7,.3,1) both}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  }
+  .safe-b{padding-bottom:env(safe-area-inset-bottom,0)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Mid Valley Air", "telephone": "(559) 308-9567", "areaServed": "Tulare", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "68"}}</script></head>
+<body class="overflow-x-hidden">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-3 focus:bg-white focus:px-4 focus:py-2 focus:font-semibold">Skip to content</a>
+
+<header class="bg-[var(--ink)] text-white">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
+    <div class="min-w-0">
+      <p class="display truncate text-2xl uppercase sm:text-3xl">Mid Valley Air</p>
+      <p class="truncate text-xs uppercase tracking-[.18em] text-white/55">Heating &amp; Air &middot; Tulare, CA</p>
+    </div>
+    <a href="tel:+15593089567"
+       class="hidden shrink-0 items-center gap-2 bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[var(--accent-ink)] transition-colors hover:brightness-95 sm:inline-flex">
+      Call (559) 308-9567
+    </a>
+  </div>
+  <div class="rule" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <section class="relative bg-[var(--ink)]">
+    
+    <img src="photo-1.jpg" alt="Mid Valley Air at work in Tulare, California"
+         width="994" height="742" fetchpriority="high"
+         class="absolute inset-0 h-full w-full object-cover opacity-40">
+    
+    <div class="relative mx-auto max-w-6xl px-5 py-20 sm:py-28">
+      <p class="rise mb-4 text-xs font-semibold uppercase tracking-[.24em] text-[var(--accent)]">Serving Tulare and the Central Valley</p>
+      <h1 class="rise display balance max-w-3xl text-5xl uppercase text-white sm:text-7xl">Cool Air, Same Day</h1>
+      <p class="rise mt-6 max-w-xl text-lg text-white/80">Repairs, replacements, and maintenance on every major system. Straight pricing before we start.</p>
+      <div class="rise mt-9 flex flex-wrap gap-3">
+        <a href="tel:+15593089567"
+           class="bg-[var(--accent)] px-7 py-4 text-base font-semibold text-[var(--accent-ink)] transition-colors hover:brightness-95">
+          Call (559) 308-9567
+        </a>
+        <a href="#services"
+           class="border border-white/30 px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10">
+          See What We Do
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section aria-label="Customer rating" class="border-b border-black/10 bg-[var(--wash)]">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-baseline gap-x-8 gap-y-2 px-5 py-6">
+      
+      <p class="text-sm"><span class="num display text-3xl">4.9</span>
+        <span class="ml-1 text-black/60">out of 5 from <span class="num font-semibold">68</span> customer reviews</span></p>
+      <p class="text-sm text-black/50">Licensed and local. Straight answers before any work starts.</p>
+    </div>
+  </section>
+  
+
+  <section id="services" class="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+    <p class="mb-3 text-xs font-semibold uppercase tracking-[.24em] text-black/45">Residential &middot; Commercial &middot; Industrial</p>
+    <h2 class="display text-4xl uppercase sm:text-5xl">What We Handle</h2>
+    <div class="rule mt-4 w-20" aria-hidden="true"></div>
+    <ul class="mt-10 grid gap-px bg-black/10 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <li class="bg-white p-7">
+        <h3 class="text-base font-semibold">AC Repair</h3>
+        <p class="mt-2 text-sm leading-relaxed text-black/65">Diagnostics and same-day repair on most residential systems.</p>
+      </li>
+      
+      <li class="bg-white p-7">
+        <h3 class="text-base font-semibold">System Replacement</h3>
+        <p class="mt-2 text-sm leading-relaxed text-black/65">Right-sized equipment, installed clean, with the old unit hauled off.</p>
+      </li>
+      
+      <li class="bg-white p-7">
+        <h3 class="text-base font-semibold">Heating &amp; Furnace</h3>
+        <p class="mt-2 text-sm leading-relaxed text-black/65">Ignition, blower, and thermostat problems sorted before the cold hits.</p>
+      </li>
+      
+      <li class="bg-white p-7">
+        <h3 class="text-base font-semibold">Maintenance Plans</h3>
+        <p class="mt-2 text-sm leading-relaxed text-black/65">Seasonal tune-ups that keep the unit off the emergency call list.</p>
+      </li>
+      
+      <li class="bg-white p-7">
+        <h3 class="text-base font-semibold">Ductwork</h3>
+        <p class="mt-2 text-sm leading-relaxed text-black/65">Leak sealing and airflow balancing so every room actually gets air.</p>
+      </li>
+      
+      <li class="bg-white p-7">
+        <h3 class="text-base font-semibold">Indoor Air Quality</h3>
+        <p class="mt-2 text-sm leading-relaxed text-black/65">Filtration and ventilation upgrades for dust and allergy season.</p>
+      </li>
+      
+    </ul>
+  </section>
+
+
+  
+  <section aria-label="Work photo" class="relative">
+    <img src="photo-2.jpg" alt="A job completed by Mid Valley Air"
+         width="1600" height="2133" loading="lazy"
+         class="h-[42vh] min-h-[280px] w-full object-cover">
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+    <p class="absolute bottom-0 left-0 right-0 mx-auto max-w-6xl px-5 pb-7 text-white">
+      <span class="display block text-3xl uppercase sm:text-4xl">Local Crew, Not A Call Center</span>
+      <span class="mt-2 block max-w-lg text-sm text-white/75">You talk to the person doing the work. Same number every time.</span>
+    </p>
+  </section>
+  
+
+  
+  <section class="bg-[var(--wash)] py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="display text-4xl uppercase sm:text-5xl">Recent Work</h2>
+      <div class="rule mt-4 w-20" aria-hidden="true"></div>
+      <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
+        
+        <img src="photo-3.jpg" alt="Work completed by Mid Valley Air"
+             width="1600" height="2133" loading="lazy"
+             class="aspect-[4/3] w-full bg-black/5 object-cover">
+        
+        <img src="photo-4.jpg" alt="Work completed by Mid Valley Air"
+             width="1600" height="1803" loading="lazy"
+             class="aspect-[4/3] w-full bg-black/5 object-cover">
+        
+        <img src="photo-5.jpg" alt="Work completed by Mid Valley Air"
+             width="1170" height="1154" loading="lazy"
+             class="aspect-[4/3] w-full bg-black/5 object-cover">
+        
+        <img src="photo-6.jpg" alt="Work completed by Mid Valley Air"
+             width="1170" height="1160" loading="lazy"
+             class="aspect-[4/3] w-full bg-black/5 object-cover">
+        
+        <img src="photo-7.jpg" alt="Work completed by Mid Valley Air"
+             width="1170" height="1449" loading="lazy"
+             class="aspect-[4/3] w-full bg-black/5 object-cover">
+        
+      </div>
+    </div>
+  </section>
+  
+
+
+  
+  <section class="border-t border-black/10 py-14">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="display text-3xl uppercase sm:text-4xl">Where We Work</h2>
+      <div class="rule mt-4 w-20" aria-hidden="true"></div>
+      <ul class="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm text-black/70">
+        <li>Clovis</li><li>Fresno</li><li>Sanger</li><li>Selma</li><li>Kingsburg</li><li>Fowler</li><li>Reedley</li><li>Madera</li><li>Kerman</li><li>Parlier</li>
+      </ul>
+      <p class="mt-6 text-sm text-black/50">Not sure if you are in range? Call and ask, it is a short conversation.</p>
+    </div>
+  </section>
+  
+
+  <section class="bg-[var(--ink)] py-16 text-white sm:py-20">
+    <div class="mx-auto max-w-3xl px-5 text-center">
+      <h2 class="display balance text-4xl uppercase sm:text-5xl">Need It Looked At Today?</h2>
+      <p class="mt-5 text-white/75">Call and talk to someone who actually does the work. No call center, no runaround.</p>
+      <a href="tel:+15593089567"
+         class="mt-8 inline-block bg-[var(--accent)] px-8 py-4 text-base font-semibold text-[var(--accent-ink)] transition-colors hover:brightness-95">
+        Call (559) 308-9567
+      </a>
+      <p class="mt-6 text-sm text-white/55">11486 Avenue 264, Visalia, CA 93277, USA</p>
+    </div>
+  </section>
+</main>
+
+
+<section id="cl-quote" style="padding:64px 20px;background:#f4f6f8">
+  <div style="max-width:560px;margin:0 auto">
+    <h2 style="font-size:30px;line-height:1.15;margin:0 0 10px">Request a quote</h2>
+    <p style="margin:0 0 24px;color:#5a6472;font-size:16px;line-height:1.55">
+      Send it over and Mid Valley Air will get back to you. Faster than waiting on hold.</p>
+    <div id="cl-q-form" style="display:grid;gap:12px">
+      <input id="cl-q-name" type="text" placeholder="Your name" autocomplete="name"
+        style="padding:14px 15px;border:1px solid #d3d9e0;border-radius:8px;font-size:16px;font-family:inherit;width:100%">
+      <input id="cl-q-phone" type="tel" placeholder="Phone number" autocomplete="tel"
+        style="padding:14px 15px;border:1px solid #d3d9e0;border-radius:8px;font-size:16px;font-family:inherit;width:100%">
+      <textarea id="cl-q-msg" rows="4" placeholder="What's going on?"
+        style="padding:14px 15px;border:1px solid #d3d9e0;border-radius:8px;font-size:16px;font-family:inherit;width:100%;resize:vertical"></textarea>
+      <button id="cl-q-send" type="button"
+        style="padding:15px 20px;border:none;border-radius:8px;background:#111820;color:#fff;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer">
+        Send request</button>
+      <p id="cl-q-note" style="margin:2px 0 0;font-size:13px;color:#7a838f"></p>
+    </div>
+  </div>
+</section>
 <script>
 (function(){
-  var STORE='https://fusyxkmgzretrkcyyacs.supabase.co/storage/v1/object/public/demos/';
-  var parts=location.pathname.replace(/^\/clearline-demos\/?/,'').split('/').filter(Boolean);
-  var slug=parts[0]||'';
-  if(!/^[a-z0-9][a-z0-9-]{0,120}$/i.test(slug)){document.getElementById('cl-boot').textContent='Nothing here.';return;}
-  fetch(STORE+slug+'/index.html',{cache:'force-cache'})
-    .then(function(r){if(!r.ok)throw new Error(r.status);return r.text();})
-    .then(function(html){
-      var base=STORE+slug+'/';
-      if(!/<base\s/i.test(html)){
-        html=/<head[^>]*>/i.test(html)
-          ? html.replace(/<head([^>]*)>/i,'<head$1><base href="'+base+'">')
-          : '<base href="'+base+'">'+html;
-      }
-      document.open();document.write(html);document.close();
-    })
-    .catch(function(){
-      document.getElementById('cl-boot').innerHTML='<div><strong style="display:block;font-size:19px;color:#12151a;margin-bottom:6px">Nothing here yet</strong>This preview is not available.</div>';
+  var btn=document.getElementById('cl-q-send'); if(!btn) return;
+  var note=document.getElementById('cl-q-note');
+  btn.addEventListener('click',function(){
+    var n=document.getElementById('cl-q-name').value.trim();
+    var p=document.getElementById('cl-q-phone').value.trim();
+    var m=document.getElementById('cl-q-msg').value.trim();
+    if(!n||!p){ note.textContent='Name and phone, then we can reach you.'; note.style.color='#b4413a'; return; }
+    btn.disabled=true; btn.textContent='Sending...';
+    fetch('https://fusyxkmgzretrkcyyacs.supabase.co/rest/v1/demo_inquiries',{method:'POST',
+      headers:{'apikey':'sb_publishable_jVR6cac6c3caVuBRgN1Blw_lkB_h5Ta','Content-Type':'application/json','Prefer':'return=minimal'},
+      body:JSON.stringify({place_id:'ChIJHY02PlkvlYARY4nIt-ylO6g',business:'Mid Valley Air',name:n,phone:p,message:m})
+    }).then(function(r){
+      if(!r.ok) throw new Error(r.status);
+      document.getElementById('cl-q-form').innerHTML=
+        '<p style="margin:0;font-size:17px;line-height:1.5"><b>Got it.</b> We'll reach out at '+
+        p.replace(/[<>&"]/g,'')+' shortly.</p>';
+    }).catch(function(){
+      btn.disabled=false; btn.textContent='Send request';
+      note.textContent='That did not go through. Please call instead.'; note.style.color='#b4413a';
     });
+  });
 })();
 </script>
+<footer class="bg-[var(--ink-2)] py-10 text-white/55">
+  <div class="mx-auto max-w-6xl px-5 text-xs leading-relaxed">
+    <p class="text-white/80">Mid Valley Air &middot; (559) 308-9567</p>
+    <p class="mt-1">11486 Avenue 264, Visalia, CA 93277, USA</p>
+    
+    <p class="mt-4">Photos: Mid Valley Air, via Google.</p>
+    
+    <p class="mt-4">
+      Preview site built by <a href="https://clearlineweb.us" class="underline decoration-white/30 hover:text-white">clearlineweb.us</a>.
+      Not affiliated with Mid Valley Air. Built as a sample for review.
+    </p>
+  </div>
+</footer>
+
+<div class="safe-b fixed inset-x-0 bottom-0 z-40 border-t border-black/10 bg-white/95 p-3 backdrop-blur sm:hidden">
+  <a href="tel:+15593089567"
+     class="block w-full bg-[var(--accent)] py-4 text-center text-base font-semibold text-[var(--accent-ink)]">
+    Call (559) 308-9567
+  </a>
+</div>
+<div class="h-24 sm:hidden" aria-hidden="true"></div>
+
+
+<style id="cl-claim">
+#cl-claim-bar{position:fixed;left:0;right:0;bottom:0;z-index:99999;
+ background:#0d1117;color:#f0f3f8;border-top:1px solid #262c36;
+ font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+ display:flex;align-items:center;gap:14px;padding:12px 18px;flex-wrap:wrap;
+ box-shadow:0 -6px 22px rgba(0,0,0,.32)}
+#cl-claim-bar p{margin:0;font-size:13.5px;line-height:1.45}
+#cl-claim-bar p b{font-weight:700}
+#cl-claim-bar p span{color:#8b95a6}
+#cl-claim-bar .cl-cta{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+#cl-claim-bar a{display:inline-block;padding:9px 15px;border-radius:6px;
+ font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap}
+#cl-claim-bar a.p{background:#3B9EFF;color:#04070c}
+#cl-claim-bar a.s{border:1px solid #333b48;color:#c3cbd8}
+#cl-claim-x{background:none;border:none;color:#5d6675;font-size:19px;
+ cursor:pointer;line-height:1;padding:0 2px}
+@media(max-width:640px){#cl-claim-bar{padding:11px 14px}
+ #cl-claim-bar .cl-cta{margin-left:0;width:100%}
+ #cl-claim-bar a{flex:1;text-align:center}}
+body{padding-bottom:78px!important}
+</style>
+
+<div id="cl-claim-bar" role="region" aria-label="About this preview">
+  <p><b>This is a preview, not your live site.</b>
+     <span>Built for Mid Valley Air by Clearline. Nothing here is public.</span></p>
+  <div class="cl-cta">
+    <a class="p" href="mailto:braxton@clearlineweb.us?subject=About%20the%20site%20you%20built%20for%20Mid%20Valley%20Air">Claim this site</a>
+    <a class="s" href="https://clearlineweb.us" target="_blank" rel="noopener">Who built this</a>
+  </div>
+  <button id="cl-claim-x" aria-label="Hide this bar"
+    onclick="document.getElementById('cl-claim-bar').remove();document.body.style.paddingBottom='0'">&times;</button>
+</div>
 </body>
 </html>
