@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talk through your project — Clearline</title>
+<meta name="description" content="Pick a preferred time or tell us what's slowing your business down. Twenty minutes, no obligation — we'll tell you what we'd build and roughly what it costs.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<style>
+  .method-row{ display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.6rem; }
+  .method-chip{ padding:.55rem 1rem; border-radius: var(--r-pill); border:1px solid var(--paper-line-strong); font-size:.85rem; font-weight:700; }
+  .method-chip[aria-pressed="true"]{ background: var(--ink); color:#fff; border-color: var(--ink); }
+  .preview-note{ margin-top:1.5rem; padding: .9rem 1.1rem; border-radius: var(--r-sm); background: var(--crimson-tint); color: var(--crimson-dark); font-size:.85rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="wrap">
+    <a href="../index.html" class="brand" aria-label="Clearline home">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 20 L12 10 L22 10" fill="none" stroke="#C41E3A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="8.5" r="2.5" fill="#C41E3A"/></svg>
+      Clearline
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../what-we-build/">What we build</a>
+      <a href="../work/">Work</a>
+      <a href="../how-it-works/">How it works</a>
+      <a href="../about/">About</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="https://app.clearlineweb.us">Client login</a>
+      <a class="btn btn-primary" href="./" aria-current="page">Talk through your project</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="../what-we-build/">What we build</a>
+    <a href="../work/">Work</a>
+    <a href="../how-it-works/">How it works</a>
+    <a href="../about/">About</a>
+    <a href="https://app.clearlineweb.us">Client login</a>
+    <div class="mobile-cta">
+      <a class="btn btn-primary" href="./">Talk through your project</a>
+      <a class="btn btn-ghost" href="tel:5599189067">Call 559-918-9067</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section section--tight section--paper" style="padding-bottom:0;">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow">Start here</p>
+      <h1 class="h1" style="margin-top:.7rem;">Twenty minutes. Tell us what's going on, we tell you what we'd build.</h1>
+      <p class="lede" style="margin-top:.7rem;">No obligation, and no cost to talk. Same number either way — it reaches the person who'd actually be building the thing.</p>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="wrap start-grid">
+
+      <div>
+        <h2 class="h3">Tell us about the business</h2>
+        <form data-start-form novalidate style="margin-top:1.3rem;">
+          <input type="hidden" data-selected-slot name="preferred_slot">
+          <div class="form-field">
+            <label for="biz">Business name</label>
+            <input id="biz" name="business" type="text" required autocomplete="organization">
+          </div>
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="phone">Best number</label>
+            <input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel">
+          </div>
+          <div class="form-field">
+            <label for="notes">What's slowing the business down? <span class="body-soft" style="font-weight:400;">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+          </div>
+          <p class="form-note">We only ask for what we need to call you back with something useful.</p>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Request this time</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+          <p class="preview-note">This page is a design preview. Submitting here won't create a real request — once connected to Clearline's booking system, this becomes a live enquiry.</p>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="h3">Pick a time that works</h2>
+        <p class="body-soft" style="margin-top:.6rem;">These are the hours we usually have free, not a live diary. We text back to confirm, normally within the hour on a working day.</p>
+        <p class="tz-note">🕘 All times shown in Pacific — America/Los_Angeles.</p>
+
+        <div class="method-row" role="group" aria-label="Preferred contact method">
+          <button type="button" class="method-chip" aria-pressed="true">Phone call</button>
+          <button type="button" class="method-chip" aria-pressed="false">Video call</button>
+          <button type="button" class="method-chip" aria-pressed="false">In person</button>
+        </div>
+
+        <div class="slot-grid" role="group" aria-label="Preferred time slots, Pacific time">
+          <button type="button" class="slot" data-slot-label="Mon 8:00 AM">Mon<br>8:00a</button>
+          <button type="button" class="slot" data-slot-label="Mon 11:00 AM" aria-pressed="true">Mon<br>11:00a</button>
+          <button type="button" class="slot" data-slot-label="Tue 9:00 AM">Tue<br>9:00a</button>
+          <button type="button" class="slot" data-slot-label="Tue 2:00 PM">Tue<br>2:00p</button>
+          <button type="button" class="slot" data-slot-label="Wed 10:00 AM">Wed<br>10:00a</button>
+          <button type="button" class="slot" data-slot-label="Wed 3:00 PM">Wed<br>3:00p</button>
+          <button type="button" class="slot" data-slot-label="Thu 8:00 AM">Thu<br>8:00a</button>
+          <button type="button" class="slot" data-slot-label="Thu 1:00 PM">Thu<br>1:00p</button>
+          <button type="button" class="slot" data-slot-label="Fri 9:00 AM">Fri<br>9:00a</button>
+          <button type="button" class="slot" data-slot-label="Fri 4:00 PM">Fri<br>4:00p</button>
+        </div>
+
+        <div class="panel" style="margin-top:2rem; padding:1.4rem;">
+          <h3 class="h3" style="font-size:1.05rem;">Rather just call?</h3>
+          <p class="body-soft" style="margin-top:.5rem;">Same number, seven days a week.</p>
+          <div class="btn-row" style="margin-top:1rem;">
+            <a class="btn btn-ghost" href="tel:5599189067">Call 559-918-9067</a>
+            <a class="btn btn-ghost" href="sms:5599189067">Text 559-918-9067</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 20 L12 10 L22 10" fill="none" stroke="#ef6478" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="8.5" r="2.5" fill="#ef6478"/></svg>
+          Clearline
+        </a>
+        <p>Custom software, websites and AI systems for established businesses. Founder-led from Clovis and Fresno, California.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What we build</h4>
+        <ul>
+          <li><a href="../what-we-build/#software">Custom software &amp; portals</a></li>
+          <li><a href="../what-we-build/#websites">Websites &amp; digital experiences</a></li>
+          <li><a href="../what-we-build/#ai">AI receptionists &amp; agents</a></li>
+          <li><a href="../what-we-build/#automation">Automations &amp; integrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../work/">Work</a></li>
+          <li><a href="../how-it-works/">How it works</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../already-have-software/">Already have software?</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="./">Talk through your project</a></li>
+          <li><a href="tel:5599189067">Call 559-918-9067</a></li>
+          <li><a href="sms:5599189067">Text 559-918-9067</a></li>
+          <li><a href="https://app.clearlineweb.us">Client login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Clearline. Founder-led from Clovis and Fresno, California.</span>
+      <span>Preview build — not the production site.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+  document.querySelectorAll('.method-chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      document.querySelectorAll('.method-chip').forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+    });
+  });
+</script>
+</body>
+</html>

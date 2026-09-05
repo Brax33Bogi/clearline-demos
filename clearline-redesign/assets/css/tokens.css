@@ -1,0 +1,82 @@
+/*
+  Clearline design tokens.
+  Charcoal + crimson identity. One source of truth for color, type, space,
+  radius and motion so every page and every demo panel draws from the same set.
+*/
+:root{
+  /* ---- color: surfaces ---- */
+  --paper:        #F5F3EE; /* warm off-white, primary light surface */
+  --paper-dim:    #ECE8DF; /* slightly deeper warm neutral, cards on light */
+  --paper-line:   rgba(26,26,26,.12);
+  --paper-line-strong: rgba(26,26,26,.22);
+
+  --ink:          #1A1A1A; /* primary charcoal, primary dark surface */
+  --ink-deep:     #121212; /* deeper neutral surface */
+  --ink-raise:    #232323; /* raised panel on dark */
+  --ink-line:     rgba(245,243,238,.14);
+  --ink-line-strong: rgba(245,243,238,.26);
+
+  /* ---- color: text ---- */
+  --text-on-paper:      #1A1A1A;
+  --text-on-paper-soft: rgba(26,26,26,.66);
+  --text-on-paper-faint:rgba(26,26,26,.46);
+  --text-on-ink:        #F5F3EE;
+  --text-on-ink-soft:   rgba(245,243,238,.68);
+  --text-on-ink-faint:  rgba(245,243,238,.46);
+
+  /* ---- color: brand ---- */
+  --crimson:       #C41E3A;
+  --crimson-dark:  #9A1830;
+  --crimson-tint:  rgba(196,30,58,.10);
+  --crimson-tint-strong: rgba(196,30,58,.18);
+  --on-crimson:    #F5F3EE;
+
+  /* ---- color: status (used sparingly, in demos only) ---- */
+  --status-ok:    #2F7A4D;
+  --status-wait:  #B4791A;
+  --status-ok-tint: rgba(47,122,77,.12);
+  --status-wait-tint: rgba(180,121,26,.14);
+
+  /* ---- type ---- */
+  --font-display: 'Space Grotesk', 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-body:    'Manrope', system-ui, -apple-system, sans-serif;
+
+  --size-hero:     clamp(2.5rem, 4.6vw + 1.2rem, 5.5rem);
+  --size-h1:       clamp(2.1rem, 2.4vw + 1.3rem, 3.1rem);
+  --size-h2:       clamp(1.6rem, 1.3vw + 1.15rem, 2.25rem);
+  --size-h3:       clamp(1.2rem, .5vw + 1.05rem, 1.5rem);
+  --size-lead:     clamp(1.1rem, .4vw + 1rem, 1.3rem);
+  --size-body:     1.0625rem;
+  --size-small:    .9rem;
+  --size-micro:    .78rem;
+
+  --lh-tight: 1.08;
+  --lh-snug:  1.25;
+  --lh-body:  1.6;
+
+  /* ---- layout ---- */
+  --content-w: 1280px;
+  --content-w-narrow: 760px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+
+  /* ---- radius ---- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+
+  /* ---- shadow (used sparingly for panel depth, never glow) ---- */
+  --shadow-sm: 0 1px 2px rgba(18,18,18,.06), 0 1px 1px rgba(18,18,18,.04);
+  --shadow-md: 0 8px 24px rgba(18,18,18,.10), 0 2px 6px rgba(18,18,18,.06);
+  --shadow-lg: 0 24px 64px rgba(18,18,18,.16), 0 4px 12px rgba(18,18,18,.08);
+  --shadow-ink-md: 0 8px 24px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
+
+  /* ---- motion ---- */
+  --ease: cubic-bezier(.4,0,.2,1);
+  --dur-control: 200ms;
+  --dur-scene: 400ms;
+}
+
+@media (prefers-reduced-motion: reduce){
+  :root{ --dur-control: 1ms; --dur-scene: 1ms; }
+}

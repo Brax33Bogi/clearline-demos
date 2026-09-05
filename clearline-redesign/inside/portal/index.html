@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside the portal — Clearline</title>
+<meta name="description" content="How Clearline's own client portal works: signing up, day one, requests in plain language, files, and a monthly report on the 1st.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="wrap">
+    <a href="../../index.html" class="brand" aria-label="Clearline home">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 20 L12 10 L22 10" fill="none" stroke="#C41E3A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="8.5" r="2.5" fill="#C41E3A"/></svg>
+      Clearline
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../../what-we-build/">What we build</a>
+      <a href="../../work/">Work</a>
+      <a href="../../how-it-works/">How it works</a>
+      <a href="../../about/">About</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login-link" href="https://app.clearlineweb.us">Client login</a>
+      <a class="btn btn-primary" href="../../start/">Talk through your project</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="../../what-we-build/">What we build</a>
+    <a href="../../work/">Work</a>
+    <a href="../../how-it-works/">How it works</a>
+    <a href="../../about/">About</a>
+    <a href="https://app.clearlineweb.us">Client login</a>
+    <div class="mobile-cta">
+      <a class="btn btn-primary" href="../../start/">Talk through your project</a>
+      <a class="btn btn-ghost" href="tel:5599189067">Call 559-918-9067</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section section--tight section--paper page-hero">
+    <div class="wrap wrap--narrow">
+      <div class="breadcrumb"><a href="../../work/">Work</a><span aria-hidden="true">/</span><span>Inside the portal</span></div>
+      <p class="eyebrow">Internal software</p>
+      <h1 class="h1" style="margin-top:.8rem;">The portal</h1>
+      <p class="lede">Every Clearline client signs into one place: what we run for them, the changes they want, in their own words, their files, and the month's numbers on the 1st.</p>
+    </div>
+  </section>
+
+  <section class="section--tight section--paper">
+    <div class="wrap">
+      <p class="sample-tag"><span class="dot" aria-hidden="true"></span>Recreated interface · Sample data, not a captured screenshot</p>
+      <div class="panel-frame" style="margin-top:1.3rem;">
+        <div class="workspace-demo" data-workspace>
+          <div class="ws-rail">
+            <div class="rail-dot is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+            <div class="rail-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/></svg></div>
+            <div class="rail-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h16M8 4v16"/></svg></div>
+          </div>
+          <div class="ws-queue">
+            <div class="ws-queue-head"><h4>Your requests</h4><span class="count-badge">3</span></div>
+            <button type="button" class="ws-row is-selected" aria-pressed="true"
+              data-title="Add the spring tune-up special" data-meta="Submitted by you, Sept 2"
+              data-desc="Can we get something on the homepage about the spring tune-up special before it fills up?"
+              data-status="wait" data-status-label="In review" data-approvable="true"
+              data-history='["You sent this — Tue, 9:14 AM","Draft ready for your review — Tue, 2:40 PM"]'>
+              <span class="row-title">Homepage banner</span><span class="row-sub">Spring tune-up special</span><span class="row-tag tag-wait">In review</span>
+            </button>
+            <button type="button" class="ws-row" aria-pressed="false"
+              data-title="Update crew photo on About page" data-meta="Submitted by you, Aug 26"
+              data-desc="New hire started this month — can we swap the crew photo?"
+              data-status="ok" data-status-label="Done" data-approvable="false"
+              data-history='["You sent this — Aug 26","Updated and live — Aug 27"]'>
+              <span class="row-title">Crew photo</span><span class="row-sub">About page update</span><span class="row-tag tag-ok">Done</span>
+            </button>
+            <button type="button" class="ws-row" aria-pressed="false"
+              data-title="Fix a broken service area link" data-meta="Flagged by monitoring, Aug 30"
+              data-desc="Monitoring caught a broken link on the service-area page and it was fixed before you noticed."
+              data-status="ok" data-status-label="Done" data-approvable="false"
+              data-history='["Caught by monitoring — Aug 30, 6:02 AM","Fixed — Aug 30, 6:14 AM"]'>
+              <span class="row-title">Broken link</span><span class="row-sub">Caught by monitoring</span><span class="row-tag tag-ok">Done</span>
+            </button>
+          </div>
+          <div class="ws-detail" data-ws-detail>
+            <div class="ws-detail-head"><h4 data-f-title></h4><span class="row-tag" data-f-status></span></div>
+            <p class="ws-detail-meta" data-f-meta></p>
+            <p class="ws-detail-desc" data-f-desc></p>
+            <div class="ws-history" data-f-history></div>
+            <div class="ws-actions"><button type="button" class="btn btn-primary btn-sm" data-ws-approve>Approve &amp; publish</button></div>
+          </div>
+        </div>
+      </div>
+      <p class="micro body-soft" style="margin-top:.9rem;">This shows the shape of the real client portal at app.clearlineweb.us, recreated here with sample data rather than an actual client's information.</p>
+    </div>
+  </section>
+
+  <section class="section section--dim">
+    <div class="wrap">
+      <p class="eyebrow">What's in it</p>
+      <div class="grid grid-3" style="margin-top:1.5rem;">
+        <div class="card"><h3 class="h3" style="font-size:1.05rem;">Signing up</h3><p class="body-soft" style="margin-top:.6rem;">A one-page agreement in plain language, signed on a phone, with an instant PDF copy.</p></div>
+        <div class="card"><h3 class="h3" style="font-size:1.05rem;">Day one</h3><p class="body-soft" style="margin-top:.6rem;">A simple onboarding screen: your business, your site, your services, what's needed to start.</p></div>
+        <div class="card"><h3 class="h3" style="font-size:1.05rem;">Requests</h3><p class="body-soft" style="margin-top:.6rem;">Describe a change in your own words, add a photo if it helps, and watch the status update.</p></div>
+        <div class="card"><h3 class="h3" style="font-size:1.05rem;">Files</h3><p class="body-soft" style="margin-top:.6rem;">Photos, agreements and records, organized by date, in one place instead of a shared folder.</p></div>
+        <div class="card"><h3 class="h3" style="font-size:1.05rem;">Monthly report</h3><p class="body-soft" style="margin-top:.6rem;">Uptime, completed work and inquiry counts, delivered automatically on the 1st.</p></div>
+        <div class="card"><h3 class="h3" style="font-size:1.05rem;">Built for the work, not just for show</h3><p class="body-soft" style="margin-top:.6rem;">Clearline runs its own operations through the same system — so it stays useful, not decorative.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink center">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow" style="justify-content:center;">Worth noting</p>
+      <h2 class="h2" style="margin-top:.8rem;">This is Clearline's own client portal, not a preview of software built for your team.</h2>
+      <p class="lede mx-auto" style="text-align:center; margin-top:.9rem;">If you need something like this for your own customers or staff, that's a custom build scoped around your workflow — see what a workspace like that could look like.</p>
+      <div class="btn-row" style="justify-content:center; margin-top:2rem;">
+        <a class="btn btn-primary" href="../../what-we-build/#software">See custom software &amp; portals</a>
+        <a class="btn-text" href="../../start/">Talk through your project <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../../index.html" class="brand">
+          <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 20 L12 10 L22 10" fill="none" stroke="#ef6478" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23.5" cy="8.5" r="2.5" fill="#ef6478"/></svg>
+          Clearline
+        </a>
+        <p>Custom software, websites and AI systems for established businesses. Founder-led from Clovis and Fresno, California.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What we build</h4>
+        <ul>
+          <li><a href="../../what-we-build/#software">Custom software &amp; portals</a></li>
+          <li><a href="../../what-we-build/#websites">Websites &amp; digital experiences</a></li>
+          <li><a href="../../what-we-build/#ai">AI receptionists &amp; agents</a></li>
+          <li><a href="../../what-we-build/#automation">Automations &amp; integrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../../work/">Work</a></li>
+          <li><a href="../../how-it-works/">How it works</a></li>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../already-have-software/">Already have software?</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="../../start/">Talk through your project</a></li>
+          <li><a href="tel:5599189067">Call 559-918-9067</a></li>
+          <li><a href="sms:5599189067">Text 559-918-9067</a></li>
+          <li><a href="https://app.clearlineweb.us">Client login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Clearline. Founder-led from Clovis and Fresno, California.</span>
+      <span>Preview build — not the production site.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
